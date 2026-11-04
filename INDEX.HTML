@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeviKi Bolos</title>
+
+    <style>
+        body {
+            background-color: #FFF0ED;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 20px;
+            font-style: italic;
+            font-size: 17px;
+        }
+
+        h4 {
+            color: maroon;
+            margin-left: 15px;
+            font-style: italic;
+            font-size: 10px;
+            margin-top: 0px;
+        }
+
+        h2 {
+            color: maroon;
+            margin-left: 50px;
+            font-style: italic;
+            font-size: 80px;
+        }
+
+        .deviki {
+            color: maroon;
+            margin-left: 12px;
+            font-size: 80px;
+          font-style: italic;
+        }
+
+        .bolos {
+            color: pink;
+        }
+
+        h3 {
+            color: maroon;
+            margin-left: 50px;
+            font-size: 23px;
+            font-family: Garamond;
+            text-align: center;
+           margin-top: 2px;
+        }
+
+        p {
+            text-align: justify;
+            font-weight: bold;
+        }
+
+        .descricao {
+            text-align: justify;
+            font-size: 0.5em;
+            font-weight: lighter;
+            font-style: normal;
+            margin-top: 0px;
+        }
+
+        .informativo1 {
+            font-weight: bolder;
+            text-align: center;
+            font-family: Garamond;
+        }
+
+        h5 {
+            text-align: justify;
+            font-weight: bolder;
+            font-family: Garamond;
+            font-size: 20px;
+            margin-left: 220px;
+        }
+
+        /* Fundo da apresentação principal */
+        .destaque {
+            background-image: url("imagens/devikiboloss.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 10px;
+            padding: 20px;
+        }
+
+        /* Área dos produtos */
+        .area-produtos {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 15px;
+        }
+
+        .botoes-produtos {
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: maroon;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        /* Slide de fotos */
+        .slideshow {
+            position: relative;
+            width: 300px;
+            height: 230px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .foto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .foto.ativa {
+            display: block;
+        }
+
+        footer {
+            background-color: #C4A484;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 90px;
+            margin-top: 10px;
+        }
+
+        .slogan {
+            padding: 1px;
+            color: maroon;
+            font-size: 12px;
+            margin-right: 50px;
+            font-family: Garamond;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>♡ DeviKi<br>~ Bolos ♡</h1>
+    <h4>- Doce em cada detalhe!</h4>
+
+    <div class="destaque">
+        <h2>
+            <span class="deviki">🎂 DeviKi</span>
+            <span class="bolos">Bolos 🎂</span>
+        </h2>
+
+        <p>Transformando momentos<br>em doces lembranças!</p>
+
+        <p class="descricao">
+            Bolos e doces artesanais, feitos com amor<br>
+            para todas as ocasiões.
+        </p>
+    </div>
+
+    <h3>───── Produtos ─────</h3>
+
+    <p class="informativo1">
+        Sabor, qualidade e muito amor a cada mordida!
+    </p>
+
+    <h5>Selecione o que procura:</h5>
+
+    <div class="area-produtos">
+
+        <div class="botoes-produtos">
+            <button>Bolo 🍰</button>
+            <button>Mousse 🍫</button>
+            <button>Pudim 🍮</button>
+            <button>Copo da Felicidade 🥤</button>
+        </div>
+
+        <div class="slideshow">
+
+            <img class="foto ativa" src="imagens/broa.jpeg" alt="Broa de fubá">
+
+            <img class="foto" src="imagens/mousse.jpg" alt="Mousse">
+
+            <img class="foto" src="imagens/copo-da-felicidade.jpg" alt="Copo da felicidade">
+
+            <img class="foto" src="imagens/pudim.webp" alt="Pudim">
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <h3>Entre em contato!</h3>
+
+        <p>📧 E-mail: cristianacarvalhosss@gmail.com</p>
+
+        <p>📞 Telefone: (31) 9290-2391</p>
+
+        <p>
+            WhatsApp:
+
+            <a href="https://w.app/gb34se" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="25">
+                Fale conosco
+            </a>
+        </p>
+
+        <br>
+
+        <p class="slogan">
+            DeviKi Bolos — Feito com amor! ❤️
+        </p>
+
+    </footer>
+
+    <script>
+        const fotos = document.querySelectorAll(".foto");
+
+        let indice = 0;
+
+        setInterval(function() {
+
+            fotos[indice].classList.remove("ativa");
+
+            indice = (indice + 1) % fotos.length;
+
+            fotos[indice].classList.add("ativa");
+
+        }, 2000);
+    </script>
+
+</body>
+</html>
