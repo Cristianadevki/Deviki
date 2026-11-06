@@ -10,16 +10,16 @@
 
         h1 {
             color: maroon;
-            margin-left: 20px;
+            margin-left: 230px;
             font-style: italic;
-            font-size: 17px;
+            font-size: 80px;
         }
 
         h4 {
             color: maroon;
             margin-left: 15px;
             font-style: italic;
-            font-size: 10px;
+            font-size: 15px;
             margin-top: 0px;
         }
 
@@ -38,18 +38,23 @@
         }
 
         .bolos {
-            color: pink;
+            color: maroon;
         }
 
         h3 {
             color: maroon;
-            margin-left: 50px;
+            margin-left: 200px;
             font-size: 23px;
-            font-family: Garamond;
-            text-align: center;
+            font-family:serif;
+             
            margin-top: 2px;
         }
-
+   h6{
+    color: maroon;
+            margin-left: 130px;
+            font-size: 23px;
+            font-family:serif;}
+             
         p {
             text-align: justify;
             font-weight: bold;
@@ -57,10 +62,12 @@
 
         .descricao {
             text-align: justify;
-            font-size: 0.5em;
+            font-size: 20px;
             font-weight: lighter;
             font-style: normal;
             margin-top: 0px;
+            margin-left: 480px;
+            font-weight: bold;
         }
 
         .informativo1 {
@@ -79,21 +86,27 @@
 
         /* Fundo da apresentação principal */
         .destaque {
-            background-image: url("imagens/devikiboloss.jpg");
+            background-image: url("imagens/logodevii.png");
+          
+            background-position:center;
+          
             background-size: cover;
-            background-position: center;
             background-repeat: no-repeat;
-            min-height: 10px;
-            padding: 20px;
+            min-height: 0,1px;
+            padding: 0,1px;
+      position: relative;
+    top: -110px;
+
         }
 
         /* Área dos produtos */
         .area-produtos {
             display: flex;
-            align-items: center;
+             text-align: justify;
             justify-content: space-around;
             gap: 20px;
             padding: 15px;
+margin-left: 10px;
         }
 
         .botoes-produtos {
@@ -138,7 +151,7 @@
         footer {
             background-color: #C4A484;
             color: #FFFFFF;
-            text-align: center;
+            text-align: left
             padding: 90px;
             margin-top: 10px;
         }
@@ -150,35 +163,54 @@
             margin-right: 50px;
             font-family: Garamond;
         }
+.informativo {
+           font-size: 9px;
+           padding: 1px;
+           margin-right: 50px;
+
+          }
+
+form {
+      
+        text-align: left
+}
+.rodape{
+ width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #E8D5A5;
+      margin-top: 45px;
+      border-top: 1px solid rgba(232, 213, 165, 0.8);
+      padding-top: 20px;
+}
+.transformando {
+text-align: justify;
+            font-weight: bold;
+ font-size: 23px;
+margin-top: 1px;
+margin-left: 900px;
+}
     </style>
 </head>
 
 <body>
 
-    <h1>♡ DeviKi<br>~ Bolos ♡</h1>
+    <h1> DeviKi Bolos </h1>
     <h4>- Doce em cada detalhe!</h4>
 
     <div class="destaque">
         <h2>
-            <span class="deviki">🎂 DeviKi</span>
-            <span class="bolos">Bolos 🎂</span>
+            <span class="deviki"> .</span>
+            <span class="bolos"> .</span>
         </h2>
-
-        <p>Transformando momentos<br>em doces lembranças!</p>
-
-        <p class="descricao">
-            Bolos e doces artesanais, feitos com amor<br>
-            para todas as ocasiões.
-        </p>
+        <br><br><br><br><br><br>
     </div>
 
-    <h3>───── Produtos ─────</h3>
+        
+    <h3> Transformando momentos em doces lembranças! </h3>
 
-    <p class="informativo1">
-        Sabor, qualidade e muito amor a cada mordida!
-    </p>
-
-    <h5>Selecione o que procura:</h5>
+  
+    <h5>😊 O que procura?</h5>
 
     <div class="area-produtos">
 
@@ -192,6 +224,9 @@
         <div class="slideshow">
 
             <img class="foto ativa" src="imagens/broa.jpeg" alt="Broa de fubá">
+             
+            <img class="foto ativa" src="imagens/kibolo.jpg" alt="Bolo de Cenoura com cobertura chocolate">
+
 
             <img class="foto" src="imagens/mousse.jpg" alt="Mousse">
 
@@ -202,29 +237,44 @@
         </div>
 
     </div>
-
+<p class="descricao">
+            Bolos e doces artesanais, feitos com amor<br>
+            para todas as ocasiões.
+        </p>
     <footer>
 
-        <h3>Entre em contato!</h3>
+        <h6>Contatos:</h6>
 
-        <p>📧 E-mail: cristianacarvalhosss@gmail.com</p>
+        <p>📧 cristianacarvalhosss@gmail.com</p>
 
-        <p>📞 Telefone: (31) 9290-2391</p>
+        <p>📞 (31) 99290-2391</p>
 
         <p>
-            WhatsApp:
+            
 
             <a href="https://w.app/gb34se" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="25">
-                Fale conosco
+                Chamar via WhatsApp
             </a>
-        </p>
+</p>
+ <form>
+			
+			<label for="mensagem">Mensagem: </label>
+			<textarea name="mensagem" cols="30" rows="7"></textarea>
+			<br>
+			<input type="submit" value="Enviar">
+		</form>
+       <p class="informativo">Sua mensagem será respondida em até 48 horas.</p>
 
         <br>
 
         <p class="slogan">
             DeviKi Bolos — Feito com amor! ❤️
         </p>
+<p class="rodape">
+        &copy; 2026 DeviKi.
+        Todos os direitos reservados.
+      </p>
 
     </footer>
 
@@ -246,3 +296,4 @@
 
 </body>
 </html>
+
