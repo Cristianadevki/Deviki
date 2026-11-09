@@ -4,6 +4,16 @@
     <title>DeviKi Bolos</title>
 
     <style>
+
+@font-face {
+	font-family:"dancing";
+        src: url("DancingScript-VariableFont_wght[1].woff2") format("woff2");
+        }
+@font-face {
+	font-family:"jet";
+        src: url("JetBrainsMono-VariableFont_wght[1].woff2") format("woff2");
+        }
+
         body {
             background-color: #FFF0ED;
         }
@@ -13,6 +23,7 @@
             margin-left: 230px;
             font-style: italic;
             font-size: 80px;
+            font-family:dancing;
         }
 
         h4 {
@@ -21,12 +32,15 @@
             font-style: italic;
             font-size: 15px;
             margin-top: 0px;
+            font-family:dancing;
         }
+
         h2 {
             color: maroon;
             margin-left: 50px;
             font-style: italic;
             font-size: 80px;
+             font-family:dancing;
         }
 
         .deviki {
@@ -44,7 +58,7 @@
             color: maroon;
             margin-left: 200px;
             font-size: 23px;
-            font-family:serif;
+             font-family:dancing;
              
            margin-top: 2px;
         }
@@ -52,21 +66,21 @@
     color: maroon;
             margin-left: 130px;
             font-size: 23px;
-            font-family:serif;}
+            font-family:jet;}
              
         p {
             text-align: justify;
             font-weight: bold;
+             font-family:jet;
         }
 
         .descricao {
             text-align: justify;
             font-size: 20px;
-            font-weight: lighter;
-            font-style: normal;
+               
             margin-top: 0px;
             margin-left: 480px;
-            font-weight: bold;
+            font-family:dancing;
         }
 
         .informativo1 {
@@ -78,7 +92,7 @@
         h5 {
             text-align: justify;
             font-weight: bolder;
-            font-family: Garamond;
+             font-family:dancing;
             font-size: 20px;
             margin-left: 220px;
         }
@@ -153,6 +167,7 @@ margin-left: 10px;
             text-align: left
             padding: 90px;
             margin-top: 10px;
+      font-family:jet;
         }
 
         .slogan {
@@ -160,7 +175,7 @@ margin-left: 10px;
             color: maroon;
             font-size: 12px;
             margin-right: 50px;
-            font-family: Garamond;
+            font-family:dancing;
         }
 .informativo {
            font-size: 9px;
@@ -258,7 +273,9 @@ margin-left: 900px;
 </p>
  <form>
 			
-			<label for="mensagem">Mensagem: </label>
+			<label for="e_mail">Informe seu e-mail:</label><br>
+                        <input type="email" id="e_mail" name="e_mail" required><br>
+                        <label for="mensagem">Mensagem: </label><br>
 			<textarea name="mensagem" cols="30" rows="7"></textarea>
 			<br>
 			<input type="submit" value="Enviar">
@@ -268,7 +285,7 @@ margin-left: 900px;
         <br>
 
         <p class="slogan">
-            DeviKi Bolos — Feito com amor! ❤️
+            DeviKi Bolos — Tudo feito com amor! ❤️
         </p>
 <p class="rodape">
         &copy; 2026 DeviKi.
@@ -295,4 +312,5 @@ margin-left: 900px;
 
 </body>
 </html>
+
 
