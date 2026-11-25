@@ -1,44 +1,37 @@
-Olá! Eu sou a Cristiana Carvalho 👋
+🍰 DeviKi Bolos
 
-💻 Estudante de Tecnologia da Informação, atualmente desenvolvendo meus conhecimentos em programação e desenvolvimento web.
+Projeto de desenvolvimento web criado para apresentar uma confeitaria artesanal, seus produtos e canais de contato.
 
-🚀 Tecnologias e ferramentas
+🌷 Sobre o projeto
 
-HTML5
+A DeviKi Bolos é uma página desenvolvida com o objetivo de apresentar produtos artesanais de forma simples, organizada e visualmente agradável.
 
-CSS3
+🛠️ Tecnologias utilizadas
 
-JavaScript
+HTML5 — estrutura da página.
 
-PHP
+CSS3 — estilização, layout e efeitos visuais.
 
-SQL
+JavaScript — slideshow automático de imagens.
 
-MySQL
+✨ Funcionalidades
 
-Git e GitHub
+Apresentação de produtos.
 
-📚 Atualmente estudando
+Galeria automática de imagens.
 
-Desenvolvimento Web
+Botões de navegação visual.
 
-Lógica de Programação
+Informações de contato.
 
-Banco de Dados
+Link direto para WhatsApp.
 
-Integração entre aplicações e bancos de dados
+Formulário de contato (interface).
 
-💡 Projeto ainda em desenvolvimento.
+🌐 Acesse o projeto
 
-DeviKi Bolos
-Projeto de desenvolvimento web para empresas de confeitaria, com foco na apresentação de produtos e experiência do usuário.
+DeviKi Bolos — [GitHub Pages](https://cristianadevki.github.io/Deviki/)
 
+📚 Objetivo
 
-
-🎯 Objetivo
-
-Busco uma oportunidade de estágio em Tecnologia da Informação para aplicar meus conhecimentos, desenvolver novas habilidades e contribuir com projetos e equipes de tecnologia.
-
-📫 Contato
-
-GitHub: @Cristianadevki
+Projeto desenvolvido como prática de aprendizagem em desenvolvimento web, aplicando conceitos de HTML, CSS e JavaScript.
