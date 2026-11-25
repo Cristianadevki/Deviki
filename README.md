@@ -31,8 +31,7 @@ Integração entre aplicações e bancos de dados
 💡 Projetos
 
 DeviKi Bolos
-Contabilidade Regina Carvalho
-Projetos de desenvolvimento web para empresas, com foco na apresentação de produtos, prestação de serviço e experiência do usuário.
+Projetos de desenvolvimento web para empresa de confeitaria, com foco na apresentação de produtos e experiência do usuário.
 
 
 
