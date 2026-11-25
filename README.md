@@ -28,6 +28,9 @@ Link direto para WhatsApp.
 
 Formulário de contato (interface).
 
+Bootstrap 5.
+
+
 🌐 Acesse o projeto
 
 DeviKi Bolos — [GitHub Pages](https://cristianadevki.github.io/Deviki/)
