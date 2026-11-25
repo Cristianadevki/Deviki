@@ -28,7 +28,7 @@ Banco de Dados
 
 Integração entre aplicações e bancos de dados
 
-💡 Projeto ainda em desenvolvimento
+💡 Projeto ainda em desenvolvimento.
 
 DeviKi Bolos
 Projeto de desenvolvimento web para empresas de confeitaria, com foco na apresentação de produtos e experiência do usuário.
