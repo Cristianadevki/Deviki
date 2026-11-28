@@ -1,239 +1,533 @@
+
 <!doctype html>
 <html lang="pt-br">
+
 <head>
-<meta charset="utf-8">
-<title>DeviKi| Confeitaria</title>
+    <meta charset="utf-8">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adaptação para telas de celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-@font-face {
-	font-family:"deviki";
-	src: url("OpenSans-VariableFont_wdth,wght.woff2");
-	}
-	
-	.col {
-	position:absolute;
-	margin-left: 1150px;
-	top:15px;
-    	
-	}
+    <title>DeviKi Confeitaria</title>
 
-.coll {
-		 background-color: #FFF0ED;
-    border: none;
-    padding: 5px;
-	}
-	
-.col2 {
-	background-color: #FFF0ED;
-    position:absolute;
-	width:300 px;
-	}
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-	background-color: #FFF0ED;
-}
-.docesonho {
-    list-style: none;
-}
-.container {
-    margin-top: 20px;
-}
-.row {
-	top: 80px;
-	position:absolute;
-	margin-left: 400px;
-    margin-right: 400px;
-	background-color: #FFF0ED;
-	color:black;
-	font-size:50px;
-	}
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	
+    <style>
 
+        @font-face {
+            font-family: "deviki";
+            src: url("OpenSans-VariableFont_wdth,wght.woff2");
+        }
 
-footer {
-    margin-top: auto;
-    background-color: #B58A65;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF0ED;
+            font-family: "deviki", Arial, sans-serif;
+        }
 
-.cabecario1 {
-    display: flex;
-    flex-direction: column;
-    width: 220px;
-    font-size: 15px;
-}
+        /* CABEÇALHO */
 
-.cabecario2 {
-    font-size: 10px;
-    align-self: flex-end;
-}
+        .cabecalho {
+            background-color: #FFF0ED;
+            padding: 15px 0;
+        }
 
-.cabecario3 {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    font-size: 12px;
-    line-height: 1.4;
-}
+        .logo {
+            width: 230px;
+            max-width: 100%;
+            height: auto;
+        }
 
-.cabecario3 p {
-    margin-bottom: 8px;
-}
-footer a,
-footer a:link,
-footer a:visited,
-footer a:hover,
-footer a:active {
-    color: black !important;
-    cursor: pointer;
-}
+        .navbar {
+            background-color: #FFF0ED;
+        }
 
-</style>
+        .navbar .nav-link {
+            color: black;
+            font-size: 16px;
+        }
+
+        .navbar .nav-link:hover {
+            color: #B58A65;
+        }
+
+        .btn-acesso {
+            background-color: #B58A65;
+            border-color: #B58A65;
+            color: black;
+        }
+
+        .btn-acesso:hover {
+            background-color: #966D4B;
+            border-color: #966D4B;
+            color: white;
+        }
+
+        /* CONTEÚDO */
+
+        main {
+            flex: 1;
+            padding: 30px 0 50px;
+        }
+
+        .card {
+            height: 100%;
+            background-color: #fff;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card .btn {
+            background-color: #B58A65;
+            border-color: #B58A65;
+            color: black;
+        }
+
+        .card .btn:hover {
+            background-color: #966D4B;
+            color: white;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #B58A65;
+            padding: 30px 20px;
+            margin-top: auto;
+        }
+
+        .cabecario1,
+        .cabecario3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cabecario1 {
+            font-size: 14px;
+        }
+
+        .cabecario2 {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .cabecario3 {
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .cabecario3 h3 {
+            font-size: 20px;
+        }
+
+        footer a {
+            color: black;
+        }
+
+        footer input,
+        footer textarea {
+            width: 100%;
+            max-width: 100%;
+            padding: 6px;
+            border: 1px solid #777;
+            border-radius: 4px;
+        }
+
+        footer button {
+            margin-top: 8px;
+        }
+
+        /* CELULARES */
+
+        @media (max-width: 576px) {
+
+            .logo {
+                width: 190px;
+            }
+
+            .cabecalho {
+                text-align: center;
+            }
+
+            .navbar .navbar-nav {
+                text-align: center;
+            }
+
+            .botoes-acesso {
+                justify-content: center;
+                margin-top: 12px;
+            }
+
+            main {
+                padding-top: 15px;
+            }
+
+            .card-img-top {
+                height: 230px;
+            }
+
+            footer {
+                text-align: left;
+            }
+
+            .cabecario2 {
+                order: 3;
+                margin-top: 20px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<!-- CONTAINER NO ALTO -->
+<!-- CABEÇALHO -->
 
-<div class="container">
+<header class="cabecalho">
 
-    <div class="coll">
-        <div class="coll1">
-            <img src="imagemlogo1.png" width="300"
-             class="img-fluid"
-             alt="Logo DeviKi Confeitaria">
+    <div class="container">
+
+        <div class="text-center mb-3">
+            <img src="imagemlogo1.png"
+                 class="logo"
+                 alt="Logo DeviKi Confeitaria">
         </div>
 
-        <div class="coll2">
-           
+        <!-- MENU RESPONSIVO -->
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container-fluid">
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuDeviKi"
+                        aria-controls="menuDeviKi"
+                        aria-expanded="false"
+                        aria-label="Abrir menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuDeviKi">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bolos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Doces</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Promoção</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem somos</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-flex gap-2 botoes-acesso">
+
+                        <button class="btn btn-acesso" type="button">
+                            Login
+                        </button>
+
+                        <button class="btn btn-acesso" type="button">
+                            Cadastro
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- CONTEÚDO PRINCIPAL -->
+
+<main>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- BOLOS -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card">
+
+                    <img src="bolo1.jfif"
+                         class="card-img-top"
+                         alt="Bolo artesanal">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Bolos</h5>
+
+                        <p class="card-text">
+                            Bolos artesanais preparados com ingredientes
+                            selecionados, massa macia e muito carinho.
+                            Cada fatia é um convite para adoçar o dia
+                            e transformar momentos simples em boas lembranças.
+                        </p>
+
+                        <a href="#" class="btn">Ver todos</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOUSSES -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card">
+
+                    <img src="Mousse1.jfif"
+                         class="card-img-top"
+                         alt="Mousse artesanal">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Mousses</h5>
+
+                        <p class="card-text">
+                            Cremosos, leves e irresistíveis!
+                            Nossos mousses combinam textura delicada
+                            e sabores deliciosos para proporcionar
+                            uma experiência doce a cada colherada.
+                        </p>
+
+                        <a href="#" class="btn">Ver todos</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOMBONS -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card">
+
+                    <img src="Bombom1.jfif"
+                         class="card-img-top"
+                         alt="Bombons de chocolate">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Bombons</h5>
+
+                        <p class="card-text">
+                            Uma casquinha de chocolate que esconde
+                            um recheio cremoso e surpreendente.
+                            Pequenos prazeres feitos para conquistar
+                            desde a primeira mordida.
+                        </p>
+
+                        <a href="#" class="btn">Ver todos</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-       </div>
 
-      <div class="row">
-      
-     <div class="btn-group" role="group" aria-label="Basic outlined example">
-    <button type="button" class="btn btn-outline-dark btn-lg" >Início</button>
-    <button type="button" class="btn btn-outline-dark btn-lg" >Bolos</button>
-    <button type="button" class="btn btn-outline-dark btn-lg" >Doces</button>
-	<button type="button" class="btn btn-outline-dark btn-lg" >Promoção</button>
-    <button type="button" class="btn btn-outline-dark btn-lg" >Quem somos</button>
-    </div>
-        </div>
-
-        <div class="col">
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button class="btn btn-primary btn-lg me-md-2" type="button">login</button>
-       <button class="btn btn-primary btn-lg" type="button">Cadastro</button>
-      </div>
-        </div>
-
-        <div class="col1">
-          <div class="card-group">
-      <div class="card">
-       <img src="bolo1.jfif" width="300" height = "320" class="card-img-top" alt="foto de bolo">
-    <div class="card-body">
-      <h5 class="card-title">Bolos</h5>
-      <p class="card-text">Bolos artesanais preparados com ingredientes selecionados, massa macia e muito carinho. Cada fatia é um convite para adoçar o dia e transformar momentos simples em boas lembranças.</p>
-      <a href="#" class="btn btn-primary">Ver todos</a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="Mousse1.jfif" width="300" height = "320" class="card-img-top" alt="foto de mouse">
-    <div class="card-body">
-      <h5 class="card-title">Mousses</h5>
-      <p class="card-text">Cremosos, leves e irresistíveis! Nossos mousses combinam textura delicada e sabores deliciosos para proporcionar uma experiência doce a cada colherada.</p>
-      <br><a href="#" class="btn btn-primary">Ver todos</a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="Bombom1.jfif" width="300" height = "320" class="card-img-top" alt="foto de bombom">
-    <div class="card-body">
-      <h5 class="card-title">Bombons</h5>
-      <p class="card-text">Uma casquinha de chocolate que esconde um recheio cremoso e surpreendente. Pequenos prazeres feitos para conquistar desde a primeira mordida.</p>
-      <br><a href="#" class="btn btn-primary">Ver todos</a>
-    </div>
-  </div>
-</div>
-        </div>
     </div>
 
-</div>
+</main>
 
-<!-- RODAPÉ NA PARTE DE BAIXO -->
+
+<!-- RODAPÉ -->
 
 <footer>
 
-    <div class="cabecario1">
+    <div class="container">
 
-        <div>Contato:</div>
-        <a href="mailto:cristianacarvalhosss@gmail.com">
-            cristianacarvalhosss@gmail.com
-          </a>
-        <a href="tel:+5531992902391">
-            (31) 99290-2391
-          </a>
+        <div class="row g-4">
 
-        <br>
+            <!-- CONTATO -->
 
-        <div>Solicitação</div>
+            <div class="col-12 col-md-6 col-lg-3">
 
-        <form>
-            <label for="e_mail">E-mail:</label><br>
-            <input type="email" id="e_mail" name="e-mail" required><br>
+                <div class="cabecario1">
 
-           
+                    <h5>Contato</h5>
 
-            <label for="observacao">Mensagem:</label><br>
-            <textarea id="observacao" name="observacao" rows="4" cols="23"></textarea>
+                    <a href="mailto:cristianacarvalhosss@gmail.com">
+                        cristianacarvalhosss@gmail.com
+                    </a>
 
-            <br>
+                    <a href="tel:+5531992902391">
+                        (31) 99290-2391
+                    </a>
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </form>
+                    <br>
 
-    </div>
+                    <h5>Solicitação</h5>
 
-    <div class="cabecario2">
-        &copy; 2026 DeviKi. Todos os direitos reservados.
-    </div>
+                    <form>
 
-    <div class="cabecario3">
+                        <label for="e_mail">E-mail:</label>
 
-        <h3>Como nasceu a DeviKi?</h3>
+                        <input type="email"
+                               id="e_mail"
+                               name="e-mail"
+                               required>
 
-        <p>A DeviKi foi fundada a partir de uma graduação de TI.</p>
+                        <label for="observacao" class="mt-2">
+                            Mensagem:
+                        </label>
 
-        <p>A ideia de ter uma cozinha já existia na minha mente, mas eu ainda não acreditava o suficiente nela. Não era exatamente um sonho.</p>
+                        <textarea id="observacao"
+                                  name="observacao"
+                                  rows="4"></textarea>
 
-        <p>Então comecei a estudar Tecnologia da Informação. Queria novos ares, experimentar algo diferente. Mas, para ser sincera, também não era um sonho. Hahaha!</p>
+                        <button type="submit" class="btn btn-dark btn-sm">
+                            Enviar
+                        </button>
 
-        <p>Bom, durante essa viagem, enquanto estudava, também fazia bolos e doces. Todos elogiavam e diziam que eu deveria vender. Eu gostava da sensação de agradar ao paladar das pessoas, assim como gostava de cozinhar, especialmente bolos.</p>
+                        <button type="reset" class="btn btn-light btn-sm">
+                            Limpar
+                        </button>
 
-        <p>Ao mesmo tempo, comecei a me encantar com a riqueza de conhecimentos tecnológicos que os estudos estavam me proporcionando. Achava fantástica toda aquela infraestrutura, as ferramentas e as possibilidades que a tecnologia oferecia.</p>
+                    </form>
 
-        <p>Foi então que uma luz se acendeu! Quase fiquei cega de tanta vontade de casar meus dois queridinhos: a tecnologia e a confeitaria.</p>
+                </div>
 
-        <p>Mas calma, não deu certo de primeira! Pinguei colírio, coloquei lentes novas e fui colocar a mão na massa.</p>
+            </div>
 
-        <p>Hoje estou aqui, grata por não ter ficado cega e feliz por ter encontrado uma maneira de unir duas coisas que me encantam.</p>
 
-        <p>Assim nasceu a DeviKi: Dev de desenvolvedora, Ki de... que bolo!</p>
+            <!-- HISTÓRIA -->
 
-        <p>Deu certo!&#10047;</p>
+            <div class="col-12 col-lg-7 offset-lg-1">
+
+                <div class="cabecario3">
+
+                    <h3>Como nasceu a DeviKi?</h3>
+
+                    <p>
+                        A DeviKi foi fundada a partir de uma graduação de TI.
+                    </p>
+
+                    <p>
+                        A ideia de ter uma cozinha já existia na minha mente,
+                        mas eu ainda não acreditava o suficiente nela.
+                        Não era exatamente um sonho.
+                    </p>
+
+                    <p>
+                        Então comecei a estudar Tecnologia da Informação.
+                        Queria novos ares, experimentar algo diferente.
+                        Mas, para ser sincera, também não era um sonho. Hahaha!
+                    </p>
+
+                    <p>
+                        Bom, durante essa viagem, enquanto estudava,
+                        também fazia bolos e doces. Todos elogiavam e diziam
+                        que eu deveria vender. Eu gostava da sensação de
+                        agradar ao paladar das pessoas, assim como gostava
+                        de cozinhar, especialmente bolos.
+                    </p>
+
+                    <p>
+                        Ao mesmo tempo, comecei a me encantar com a riqueza
+                        de conhecimentos tecnológicos que os estudos estavam
+                        me proporcionando. Achava fantástica toda aquela
+                        infraestrutura, as ferramentas e as possibilidades
+                        que a tecnologia oferecia.
+                    </p>
+
+                    <p>
+                        Foi então que uma luz se acendeu! Quase fiquei cega
+                        de tanta vontade de casar meus dois queridinhos:
+                        a tecnologia e a confeitaria.
+                    </p>
+
+                    <p>
+                        Mas calma, não deu certo de primeira! Pinguei colírio,
+                        coloquei lentes novas e fui colocar a mão na massa.
+                    </p>
+
+                    <p>
+                        Hoje estou aqui, grata por não ter ficado cega
+                        e feliz por ter encontrado uma maneira de unir
+                        duas coisas que me encantam.
+                    </p>
+
+                    <p>
+                        Assim nasceu a DeviKi: Dev de desenvolvedora,
+                        Ki de... que bolo!
+                    </p>
+
+                    <p>Deu certo! &#10047;</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIREITOS AUTORAIS -->
+
+            <div class="col-12">
+
+                <div class="cabecario2">
+                    &copy; 2026 DeviKi. Todos os direitos reservados.
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
 </footer>
 
+
+<!-- JAVASCRIPT DO BOOTSTRAP -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
+</html>
